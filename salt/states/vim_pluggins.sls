@@ -13,3 +13,5 @@
   file.managed:
     - source: https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
     - source_hash: 0E4ED69DE57DCEBE673371FBE7433989
+    - require:
+      - file: {{ home }}/.vim/colors/
