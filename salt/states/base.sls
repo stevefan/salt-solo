@@ -10,21 +10,21 @@ build-essential:
 vim:
   pkg.installed
 
-vim-gnome:
+#vim-gnome:
+#  pkg.installed
+
+tmux:
   pkg.installed
 
-screen:
-  pkg.installed
+#expect:
+#  pkg.installed
 
-expect:
-  pkg.installed
+#git-review:
+#  pkg.installed
 
-git-review:
-  pkg.installed
-
-openssh-server:
-  pkg.installed
+#openssh-server:
+#  pkg.installed
 
 
-gnupg-agent:
-  pkg.installed
+#gnupg-agent:
+#  pkg.installed
