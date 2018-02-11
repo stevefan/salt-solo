@@ -1,13 +1,7 @@
 {% set home = salt['environ.get']('HOME') %}
 {% set user = salt['environ.get']('SUDO_USER') %}
 
-{{ home }}/.vim/colors/:
-  file.directory:
-    - makedirs: True
-    - user: {{ user }}
-    - group: {{ user }} 
-    - dir_mode: 755
-    - file_mode: 755
+# make non sudo verion for just pulling light weight vim config into a system
 
 {{ home }}/.vim/colors/zenburn.vim:
   file.managed:

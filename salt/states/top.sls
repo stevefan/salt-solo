@@ -5,4 +5,4 @@ base:
     - vagrant
     - jsdev
     - vim
-    - vim_pluggins
+    - zenburn
