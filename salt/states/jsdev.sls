@@ -5,16 +5,7 @@ nodejs:
 npm:
   pkg.installed
 
-elm:
-  npm.installed:
-    - require:
-      - pkg: npm
-
-elm.vim:
+create-react-app:
   npm.installed:
     - pkgs:
-      - elm-test
-      - elm-oracle
-      - elm-format
-
-
+      - create-react-app
