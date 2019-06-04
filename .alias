@@ -1,0 +1,2 @@
+# Run from salt/states folder
+alias state.apply='sudo salt-call --file-root "(pwd)" --local state.apply'
