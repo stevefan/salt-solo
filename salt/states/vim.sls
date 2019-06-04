@@ -20,7 +20,7 @@ vim-dirs:
 {{ home }}/.vim/autoload/plug.vim:
   file.managed:
     - source: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    - source_hash: D9C76B2797BCE73FAC4811333C760EAD
+    - source_hash: aadf5a78ad7af770c6ca6a0014f2e15e
     - require:
       - file: {{ home }}/.vim/autoload/
 

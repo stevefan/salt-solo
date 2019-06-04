@@ -6,6 +6,6 @@
 {{ home }}/.vim/colors/zenburn.vim:
   file.managed:
     - source: https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vim
-    - source_hash: 0E4ED69DE57DCEBE673371FBE7433989
+    - source_hash: 4e4cec47c395bd15922c8d2a753cd62e
     - require:
       - file: {{ home }}/.vim/colors/
