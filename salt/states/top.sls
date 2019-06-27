@@ -8,4 +8,5 @@ base:
     - vim
     - zenburn
     - github_ssh_key
-    - aws
+    - git_fs
+    - nvm.source

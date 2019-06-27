@@ -10,3 +10,13 @@ run_root_nvm_install:
   cmd.run:
     - name: sudo bash -c '. /opt/nvm/nvm.sh; nvm install stable'
 
+npm:
+  pkg.installed
+
+jsdev:
+  npm.installed:
+    - pkgs:
+      - create-react-app
+      - '@aws-amplify/cli'
+    - require:
+      - pkg: npm
