@@ -1,10 +1,14 @@
 {% set home = salt['environ.get']('HOME') %}
 {% set user = salt['environ.get']('SUDO_USER') %}
 
-run_nvm_install:
+run_user_nvm_install:
   cmd.run:
     - name: sudo -u {{ user }} bash -c '. {{ home }}/.nvm/nvm.sh; nvm install stable'
     - runas: {{ user }}
+
+run_root_nvm_install:
+  cmd.run:
+    - name: sudo bash -c '. /opt/nvm/nvm.sh; nvm install stable'
 
 # nodejs:
 #   pkg.installed
@@ -12,8 +16,8 @@ run_nvm_install:
 # npm:
 #   pkg.installed
 # 
-# create-react-app:
-#   npm.installed:
-#     - pkgs:
-#       - create-react-app
-# 
+
+#create-react-app:
+#  npm.installed:
+#    - pkgs:
+#      - create-react-app
