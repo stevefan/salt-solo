@@ -6,11 +6,6 @@ run_nvm_install:
     - name: sudo -u {{ user }} bash -c '. {{ home }}/.nvm/nvm.sh; nvm install stable'
     - runas: {{ user }}
 
-# salt://nvm_install.sh:
-#   cmd.script:
-#     - runas: {{ user }}
-#     - cwd: {{ home }}
-
 # nodejs:
 #   pkg.installed
 # 
