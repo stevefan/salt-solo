@@ -10,14 +10,6 @@ run_root_nvm_install:
   cmd.run:
     - name: sudo bash -c '. /opt/nvm/nvm.sh; nvm install stable'
 
-# nodejs:
-#   pkg.installed
-# 
-# npm:
-#   pkg.installed
-# 
-
-#create-react-app:
-#  npm.installed:
-#    - pkgs:
-#      - create-react-app
+create-react-app:
+  cmd.run:
+    - name: sudo bash -c '. /opt/nvm/nvm.sh; npm install create-react-app'
