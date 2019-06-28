@@ -2,7 +2,6 @@ base:
   '*':
     - base
     - google_chrome
-    - teamviewer
     - vagrant
     - jsdev
     - vim
